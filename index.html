@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For Hirsyal Saputra</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="hearts"></div>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">A Little Something</div>
+        <button id="musicBtn">♫ Music Off</button>
+    </nav>
+
+    <!-- HALAMAN PEMBUKA -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="subtitle">A PAGE MADE FOR YOU</p>
+
+            <h1>
+                For Someone<br>
+                <span>Special</span>
+            </h1>
+
+            <p class="intro">
+                Tidak ada alasan khusus untuk membuat halaman ini.
+                Aku hanya ingin memberikan sesuatu yang sedikit berbeda
+                dan bisa kamu lihat kapan saja.
+            </p>
+
+            <button class="btn" onclick="openSurprise()">
+                Open This Page
+            </button>
+
+        </div>
+
+        <div class="hero-heart">♡</div>
+
+    </section>
+
+    <main id="content" class="hidden">
+
+        <!-- WELCOME -->
+        <section class="section">
+
+            <p class="subtitle">A NOTE FOR YOU</p>
+
+            <h2>Hi, Hirsyal.</h2>
+
+            <p class="description">
+                Ada banyak hal yang mungkin tidak selalu sempat
+                disampaikan secara langsung. Jadi, aku mencoba
+                menuangkannya dalam halaman sederhana ini.
+                Semoga kamu menyukainya.
+            </p>
+
+        </section>
+
+        <!-- OUR STORY -->
+        <section class="section">
+
+            <p class="subtitle">A JOURNEY TO REMEMBER</p>
+
+            <h2>Our Story</h2>
+
+            <p class="description">
+                Setiap hubungan punya cerita dan prosesnya masing-masing.
+                Begitu juga dengan kita. Ada banyak hal yang sudah dilewati,
+                dipelajari, dan semoga masih banyak hal baik yang menunggu
+                di depan.
+            </p>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <span>01</span>
+
+                    <div>
+                        <h3>The Beginning</h3>
+
+                        <p>
+                            Semua berawal dari pertemuan yang mungkin
+                            sederhana, tetapi menjadi awal dari cerita
+                            yang berarti.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span>02</span>
+
+                    <div>
+                        <h3>Getting to Know You</h3>
+
+                        <p>
+                            Mengenal satu sama lain, memahami kebiasaan,
+                            dan belajar menerima perbedaan.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span>03</span>
+
+                    <div>
+                        <h3>Until Today</h3>
+
+                        <p>
+                            Masih belajar untuk menjadi lebih baik,
+                            saling mendukung, dan menghargai setiap
+                            proses yang dijalani bersama.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- REASONS -->
+        <section class="section">
+
+            <p class="subtitle">A FEW THINGS I APPRECIATE</p>
+
+            <h2>Things About You</h2>
+
+            <p class="description">
+                Ada beberapa hal sederhana yang membuat kehadiranmu
+                terasa berarti.
+            </p>
+
+            <div class="reasons">
+
+                <div class="reason" onclick="this.classList.toggle('active')">
+
+                    <div class="front">
+                        01
+                        <small>Click to open</small>
+                    </div>
+
+                    <div class="back">
+                        Cara kamu menjadi diri sendiri.
+                    </div>
+
+                </div>
+
+                <div class="reason" onclick="this.classList.toggle('active')">
+
+                    <div class="front">
+                        02
+                        <small>Click to open</small>
+                    </div>
+
+                    <div class="back">
+                        Hal-hal kecil yang sering kamu lakukan.
+                    </div>
+
+                </div>
+
+                <div class="reason" onclick="this.classList.toggle('active')">
+
+                    <div class="front">
+                        03
+                        <small>Click to open</small>
+                    </div>
+
+                    <div class="back">
+                        Waktu yang kita habiskan bersama.
+                    </div>
+
+                </div>
+
+                <div class="reason" onclick="this.classList.toggle('active')">
+
+                    <div class="front">
+                        04
+                        <small>Click to open</small>
+                    </div>
+
+                    <div class="back">
+                        Kesempatan untuk terus belajar memahami satu sama lain.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- LOVE LETTER -->
+        <section class="section">
+
+            <p class="subtitle">A PERSONAL MESSAGE</p>
+
+            <h2>Something I Want to Say</h2>
+
+            <div class="envelope" onclick="openLetter()">
+
+                <div>✉</div>
+
+                <p>There is a message for you</p>
+
+            </div>
+
+            <div id="letter" class="letter">
+
+                <h3>Dear, Hirsyal Saputra.</h3>
+
+                <p>
+                    Aku ingin mengucapkan terima kasih untuk semua
+                    hal yang sudah kita lewati sejauh ini.
+                </p>
+
+                <p>
+                    Aku sadar bahwa dalam sebuah hubungan tidak
+                    semuanya akan selalu berjalan sesuai harapan.
+                    Akan ada perbedaan pendapat, kesibukan,
+                    dan hal-hal yang perlu dibicarakan bersama.
+                </p>
+
+                <p>
+                    Aku berharap kita bisa terus belajar untuk
+                    saling memahami, menghargai waktu masing-masing,
+                    dan memberikan dukungan dalam setiap proses.
+                </p>
+
+                <p>
+                    Tidak perlu menjadi sempurna. Cukup terus berusaha
+                    menjadi lebih baik, baik untuk diri sendiri
+                    maupun untuk hubungan ini.
+                </p>
+
+                <p>
+                    Semoga kita selalu punya alasan untuk menjaga
+                    hal baik yang sudah dimulai.
+                </p>
+
+                <h3 class="signature">
+                    Take care of yourself.
+                </h3>
+
+            </div>
+
+        </section>
+
+        <!-- FINAL MESSAGE -->
+        <section class="section final">
+
+            <div class="big-heart">♡</div>
+
+            <p class="subtitle">BEFORE YOU LEAVE</p>
+
+            <h2>One Last Thing</h2>
+
+            <p class="description">
+                Terima kasih sudah menjadi bagian dari perjalanan ini.
+                Semoga ke depannya ada lebih banyak hal baik yang
+                bisa kita temui dan lalui bersama.
+            </p>
+
+            <button class="btn" onclick="secretMessage()">
+                Click Here
+            </button>
+
+            <h3 id="secret" class="secret">
+                I'm glad to have you in my life, Hirsyal.
+            </h3>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>Made with care.</p>
+
+        <p>For Hirsyal Saputra.</p>
+
+    </footer>
+
+    <!-- BACKGROUND MUSIC -->
+    <audio id="music" loop>
+        <source src="assets/music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
